@@ -27,10 +27,10 @@ x=(.4:.01:.8);
 calc=cof.*(x.^(1.49));
 %% Remake figure a
 figure
-scatter(a(1:7,2),a(1:7,1),[],[1,.7,0],'filled');
+scatter(a(1:7,2),a(1:7,1),[],[1,.7,0],'filled','s');
 axis([.3, .8, 0,4])
 hold on
-scatter(a(8:13,2),a(8:13,1),[],'b','filled');
+scatter(a(8:13,2),a(8:13,1),[],'b','filled','^');
 scatter(a(14:end,2),a(14:end,1),[],'g','filled');
 plot(x,calc,'k')
 legend('OVX','NFR','CON',[num2str(cof),'*(BVF)^{1.49}'])
